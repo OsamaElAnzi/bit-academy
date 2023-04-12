@@ -10,23 +10,23 @@
     <h1>Steen Papier scissors</h1> <br>
     <?php
     if (isset($_GET['Save2'])) {
-        if ($_GET['Player1'] == 'rock' && $_GET['Player2'] == 'rock') {
+        if ($_GET['Player1'] == 'rock' && $_GET['Save2'] == 'rock') {
             echo "Gelijk spel";
-        } elseif ($_GET['Player1'] == 'rock' && $_GET['Player2'] == 'paper') {
+        } elseif ($_GET['Player1'] == 'rock' && $_GET['Save2'] == 'paper') {
             echo "Speler 2 Wint";
-        } elseif ($_GET['Player1'] == 'rock' && $_GET['Player2'] == 'scissors') {
+        } elseif ($_GET['Player1'] == 'rock' && $_GET['Save2'] == 'scissors') {
             echo "Speler 1 Wint";
-        } elseif ($_GET['Player1'] == 'paper' && $_GET['Player2'] == 'paper') {
+        } elseif ($_GET['Player1'] == 'paper' && $_GET['Save2'] == 'paper') {
             echo 'Gelijk spel';
-        } elseif ($_GET['Player1'] == 'paper' && $_GET['Player2'] == 'rock') {
+        } elseif ($_GET['Player1'] == 'paper' && $_GET['Save2'] == 'rock') {
             echo 'Speler 1 wint';
-        } elseif ($_GET['Player1'] == 'paper' && $_GET['Player2'] == 'scissors') {
+        } elseif ($_GET['Player1'] == 'paper' && $_GET['Save2'] == 'scissors') {
             echo 'Speler 2 wint';
-        } elseif ($_GET['Player1'] == 'scissors' && $_GET['Player2'] == 'rock') {
+        } elseif ($_GET['Player1'] == 'scissors' && $_GET['Save2'] == 'rock') {
             echo "Speler 1 Wint";
-        } elseif ($_GET['Player1'] == 'scissors' && $_GET['Player2'] == 'scissors') {
+        } elseif ($_GET['Player1'] == 'scissors' && $_GET['Save2'] == 'scissors') {
             echo "Gelijk Spel";
-        } elseif ($_GET['Player1'] == 'scissors' && $_GET['Player2'] == 'paper') {
+        } elseif ($_GET['Player1'] == 'scissors' && $_GET['Save2'] == 'paper') {
             echo "Speler 1 Wint";
         }
     }

@@ -14,13 +14,10 @@ if (isset($_GET['Save'])) {
     echo 'Speler 1 heeft een keuze gemaakt <br>';
     echo 'Speler 2 is aan de beurt';
     echo '<form action="game3.php" method="GET">';
-    echo '<input type="hidden" name="Player1" value=' . $_GET['Player1'] . '>';
-    echo '<select name="Player2" id="Player2">';
-    echo '<option value="rock">steen</option>';
-    echo '<option value="paper">papier</option>';
-    echo '<option value="scissors">schaar</option>';
-    echo '</select>';
-    echo '<button type="submit" name="Save2">opslaan</button>';
+    echo '<input type="hidden" name="Player1" value=' . $_GET['Save'] . '>';
+    echo '<button type="submit" name="Save2" value="rock"><img src="steen.jpg"></button>';
+    echo '<button type="submit" name="Save2" value="paper"><img src="papier.png"></button>';
+    echo '<button type="submit" name="Save2" value="scissors"><img src="schaar.png"></button>';
     echo '</form>';
 }
 ?>

@@ -9,12 +9,9 @@
 <body>
 	<h1>Steen Papier Schaar</h1>
         <form action="game2.php" method="GET">
-			<select name="Player1" id="Player1">
-				<option value="rock">steen</option>
-				<option value="paper">papier</option>
-				<option value="scissors">schaar</option>
-			</select>
-			<button type="submit" name="Save">opslaan</button>
+                <button type="submit" name="Save" value="rock"><img src="steen.jpg"></button>
+                <button type="submit" name="Save" value="paper"><img src="papier.png"></button>
+				<button type="submit" name="Save" value="scissors"><img src="schaar.png"></button>
         </form>
     </body>
 </html>
